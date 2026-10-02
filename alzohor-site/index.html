@@ -32,6 +32,10 @@
     .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;box-shadow:0 10px 25px rgba(237,28,36,.22)}
     .btn-blue{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;box-shadow:0 10px 25px rgba(21,89,198,.20)}
+    @keyframes redButtonGlow{0%,100%{box-shadow:0 10px 25px rgba(237,28,36,.24),0 0 0 0 rgba(237,28,36,.24)}50%{box-shadow:0 12px 34px rgba(237,28,36,.42),0 0 0 8px rgba(237,28,36,0)}}
+    @keyframes blueButtonGlow{0%,100%{box-shadow:0 10px 25px rgba(21,89,198,.22),0 0 0 0 rgba(37,167,228,.24)}50%{box-shadow:0 12px 34px rgba(21,89,198,.42),0 0 0 8px rgba(37,167,228,0)}}
+    .hero-actions .btn-primary{animation:redButtonGlow 1.7s ease-in-out infinite}
+    .hero-actions .btn-blue{animation:blueButtonGlow 1.7s ease-in-out infinite .35s}
     .btn-soft{background:#eff4ff;color:var(--navy);border:1px solid #d7e3fb}
     .hero{padding:26px 0 32px}
     .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
@@ -148,9 +152,6 @@
     <img src="assets/alzohor-logo.png" data-logo="1" alt="شعار مستشفى الزهور" />
     <div>مستشفى الزهور<small>رعاية بلا حدود</small></div>
   </a>
-  <div class="nav-actions">
-    <a class="btn btn-blue" href="#schedule">🔵 تعرف على الأطباء والتخصصات</a>
-  </div>
 </header>
 
 <main id="top">
